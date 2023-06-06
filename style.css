@@ -1,0 +1,239 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(223, 222, 222);
+}
+header{
+    height: 100hv;
+    width: 100%;
+    position: relative;
+    background: white;
+}
+header .main{
+    position: absolute;
+    top: 20%;
+    width: 70%;
+    left: 50%;
+    gap: 50px;
+    transform: translateX(-50%);
+    display: flex;
+    /* display: none; */
+}
+header .main .left{
+    flex: 3;
+    justify-content: left;
+}
+header .main .right{
+    flex: 1;
+}
+header .main .left p{
+    font-size: 34px;
+    /* font-weight: 40; */
+    margin-top: -100px;
+    margin-left: -35px;
+}
+header .main .left img{
+    height: 40vh;
+    width: 250px;
+    margin-top: 105px;
+    margin-left: -60px;
+}
+header .main .right form{
+    width: 400px;
+    border-radius: 5px;
+    background: whitesmoke;
+    margin-top: 180px;
+    box-shadow: 0 2px 4px rgba(0,0 0, .1 ), 0 8px 16px rgba(0,0 0, .1 );
+    padding: 20px 0 20px;
+    margin-right: -80px;
+   
+}
+.form_body{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0 12px;
+    gap: 15px;
+    /* margin-top: 70px; */
+}
+form input{
+    flex: 2;
+    border-radius: 1px solid white;
+    font-size: 17px;
+    padding: 11px 14px;
+    border-radius: 1px;
+    color: black;
+}
+.login{
+    background-color: rgb(9, 165, 217);
+    font-size: 25px;
+    color: white;
+    padding: 0 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+    width: 100%;
+    height: 6vh;
+}
+.forget{
+    text-align: center;
+    color: rgb(9, 165, 217);
+    font-size: 17px;
+    margin: 5px 0;
+    text-transform: capitalize;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+.forget:hover{
+    text-decoration: underline;
+}
+hr{
+    background-color: black;
+    height: 0.2px;
+}
+.create{
+    color: white;
+    background-color: green;
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
+    width: 152px;
+    line-height: 48px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: auto;
+    padding: 0 1px;
+}
+.img{
+    height: 5vh;
+    width: 3vw;
+}
+.signup{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 300px;
+    width: 432px;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0  8px 16px rgba(0, 0, 0, .1);
+    padding: 18px;
+    border-radius: 10px;
+    display: none;
+    z-index: 22222222;
+}
+.top{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+}
+.top h2{
+    font-size: 32px;
+    font-weight: bold;
+}
+.top p{
+    color: black;
+    line-height: 24px;
+    font-size: 15px;
+}
+.top img{
+    padding-bottom: 15px;
+    cursor: pointer;
+    width: 25px;
+}
+hr{
+    border: 0.3px;
+    background: gray;
+}
+.signup_body{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 15px;
+}
+.name{
+    outline: none;
+    padding: 10px;
+    width: 100%;
+    font-size: 15px;
+}
+.name{
+    display: flex;
+    gap: 13px;
+    margin: 10px 0;
+    font-size: 15px;
+    margin-top: -0px;
+}
+.bottom input{
+    padding: 10px;
+    width: 100%;
+    font-size: 15px;
+    margin-bottom: 15px;
+    outline: none;
+}
+.birthday{
+    padding: 0 15px;
+}
+.birthday select{
+    padding: 7px 35px;
+    cursor: pointer;
+    border: 1px solid black;
+}
+.date{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+.gender{
+    padding: 0 15px;
+}
+.gender .person{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3px;
+}
+.gender .person div{
+    font-size: 16px;
+    border:1px solid black;
+    padding: 7px;
+    display: flex;
+    gap: 15px;
+}
+.person div label{
+    margin-right: 10px;
+}
+.text{
+    font-size: 15px;
+}
+.signin{
+    height: 36px;
+    width: 154px;
+    background: green;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-left: 130px;
+    text-transform: capitalize;
+}
+.show{
+    display: block;
+}
+.layer{
+    height: 100vh;
+    width: 100%;
+    background: white;
+    position: absolute;
+    top: 6;
+    left: 8;
+    z-index: 22;
+    display: none;
+    opacity: 0.5;
+} 
